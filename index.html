@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Coding Quiz</title>
+        <link rel="stylesheet" href="assets/style.css" />
+
+    </head>
+    <body>
+        <header>
+                <nav>
+                    <a href="#" title="View High Score">View High Score</a>
+                    <p class="" id="timer"> Time left: <span></span></p>
+                </nav>
+        </header>
+        <section class="welcome">
+            <div class="initial-quest">
+                <h1> The Awesome Coding Quiz</h1> 
+                <br />
+                <h2>Would you like to begin?</h2>
+                <br />
+                <button 
+                    class="hide-1st"
+                    type="button" 
+                    title="quiz start" 
+                    id='start-button'>Let's begin
+                </button>
+            </div>
+        </section>
+        <section class="container">
+            <div class="quiz-box-holder">
+                <div id="quiz-quest-cont" class='hide-2nd'>
+                    <div id="question">Question</div>
+                    <div id="answer-btn" class='button-box'>
+                        <button class="btn">Answer 1</button>
+                        <button class="btn">Answer 2</button>
+                        <button class="btn">Answer 3</button>
+                        <button class="btn">Answer 4</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="assets/script.js"></script>
+    </body>
+</html>

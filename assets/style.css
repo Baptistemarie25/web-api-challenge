@@ -1,0 +1,112 @@
+
+*, *.welcome, *.container{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 30px 35px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 20px solid darkgreen;
+}
+
+header nav a {
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 10px 10px;
+    text-decoration: none;
+    background-color: #bffde8;
+}
+
+header nav a:hover {
+    color: #4CAF50;
+}
+
+header nav p {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    padding: 0px 20px;
+}
+
+.welcome .initial-quest {
+    margin: 20px auto;
+    width: 50%;
+    border: 10px solid darkgreen;
+    padding: 10px;
+    background-color: #BFFDE8;
+    border-radius: 25px;
+}
+
+.welcome .hide-1st {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.hide-1st:hover {
+    background-color: #A4F0C2;
+    color: black;
+}
+
+.hide-1st:active {
+    transform: translateY(y);
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .quiz-box-holder {
+    width: 800px;
+    max-width: 80%;
+    background-color: #BFFDE8;
+    border-radius: 10px;
+    padding: 70px;
+    box-shadow: 0 0 20px 5px;
+}
+
+.hide-2nd .button-box {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    margin: 10px 0;
+}
+
+:root {
+    --hue-correct: 120;
+    --hue-wrong: 0;
+}
+
+.btn {
+    background-color: #36C5C6;
+    border: 2px solid;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #A4F0C2;
+
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
