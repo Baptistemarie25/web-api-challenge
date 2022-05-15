@@ -6,6 +6,7 @@
     margin: 0;
 }
 
+/* Header style start */
 header {
     padding: 30px 35px;
     background-color: aquamarine;
@@ -33,7 +34,9 @@ header nav p {
     float: right;
     padding: 0px 20px;
 }
+/* Header style End */
 
+/* welcome section styles */
 .welcome .initial-quest {
     margin: 20px auto;
     width: 50%;
@@ -61,6 +64,7 @@ header nav p {
     transform: translateY(y);
 }
 
+/* quiz div styles */
 .container {
     padding: 0;
     margin: 0;
@@ -90,7 +94,7 @@ header nav p {
     --hue-correct: 120;
     --hue-wrong: 0;
 }
-
+/* Button Styles */
 .btn {
     background-color: #36C5C6;
     border: 2px solid;
