@@ -9,6 +9,35 @@ var questionNum = 0;
 var startButtonEl = document.getElementById('start-button')
 startButtonEl.addEventListener('click', startQuiz)
 
+document.getElementById("answer1").addEventListener("click", function() {
+    var answers = quizQuestions[questionNum].answers;
+    if (answers[0].correct === false) {
+        timeLeft -= 5;
+    }
+    moveToNextQuestion();
+});
+document.getElementById("answer2").addEventListener("click", function() {
+    var answers = quizQuestions[questionNum].answers;
+    if (answers[1].correct === false) {
+        timeLeft -= 5;
+    }
+    moveToNextQuestion();
+});
+document.getElementById("answer3").addEventListener("click", function() {
+    var answers = quizQuestions[questionNum].answers;
+    if (answers[2].correct === false) {
+        timeLeft -= 5;
+    }
+    moveToNextQuestion();
+});
+document.getElementById("answer4").addEventListener("click", function() {
+    var answers = quizQuestions[questionNum].answers;
+    if (answers[3].correct === false) {
+        timeLeft -= 5;
+    }
+    moveToNextQuestion();
+});
+
 //function for getting questions to appear on page
 var displayQuestion = function() {
 	document.getElementById("question").innerHTML = quizQuestions[questionNum].question;
