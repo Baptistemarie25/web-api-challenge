@@ -9,6 +9,16 @@ var questionNum = 0;
 var startButtonEl = document.getElementById('start-button')
 startButtonEl.addEventListener('click', startQuiz)
 
+//to move on to next question
+function moveToNextQuestion() {
+    questionNum++;
+    if(questionNum < quizQuestions.length){
+        displayQuestion();
+    } else {
+        // game over
+    }
+}
+
 // quiz questions and answers 
 var quizQuestions = [
     {
