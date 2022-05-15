@@ -9,6 +9,22 @@ var questionNum = 0;
 var startButtonEl = document.getElementById('start-button')
 startButtonEl.addEventListener('click', startQuiz)
 
+//begin quiz function
+function startQuiz() {
+    //when button is clicked I want the section to disappear and for quiz to appear and timer to start
+    setInterval(countDown, 1000);
+    //show initial question and answers
+    displayQuestion();
+    
+    //hide start button
+    document.getElementById("welcome").style.display = "none";
+    document.getElementById('quiz').style.display = 'inline'
+    //event listener for next question button
+    //document.getElementById("next").addEventListener('click',nextQuestion);
+
+    //nextQuestion()
+}
+
 //function for quiz timer 
 function countDown(){
     timeLeft--;
