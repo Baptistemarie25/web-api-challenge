@@ -9,6 +9,15 @@ var questionNum = 0;
 var startButtonEl = document.getElementById('start-button')
 startButtonEl.addEventListener('click', startQuiz)
 
+//function for getting questions to appear on page
+var displayQuestion = function() {
+	document.getElementById("question").innerHTML = quizQuestions[questionNum].question;
+    document.getElementById("answer1").innerHTML = quizQuestions[questionNum].answers[0].text;
+    document.getElementById("answer2").innerHTML = quizQuestions[questionNum].answers[1].text;
+    document.getElementById("answer3").innerHTML = quizQuestions[questionNum].answers[2].text;
+    document.getElementById("answer4").innerHTML = quizQuestions[questionNum].answers[3].text;
+}
+
 //begin quiz function
 function startQuiz() {
     //when button is clicked I want the section to disappear and for quiz to appear and timer to start
