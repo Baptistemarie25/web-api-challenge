@@ -9,6 +9,15 @@ var questionNum = 0;
 var startButtonEl = document.getElementById('start-button')
 startButtonEl.addEventListener('click', startQuiz)
 
+//function for quiz timer 
+function countDown(){
+    timeLeft--;
+    minutes = Math.floor(timeLeft / 60);
+    //timeLeft divinng by 60 to get number of minutes. %1 is finding remainder when divided by 1.  in the  case of 119 seconds. the (timeLeft / 60) will give 1.98 so % 1 will return just the 0.9. after that the * 60 will take the decimal and   put it back into seconds
+    seconds = Math.round(((timeLeft / 60) % 1) * 60); 
+    timerEL.innerHTML= minutes + ':' + seconds
+}
+
 //to move on to next question
 function moveToNextQuestion() {
     questionNum++;
