@@ -110,3 +110,11 @@ header nav p {
 .btn.wrong {
     --hue: var(--hue-wrong);
 }
+
+#quiz {
+    display: none;
+}
+
+#welcome {
+    display: inline;
+}
